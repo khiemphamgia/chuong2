@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Drop Cap và Hover</title>
+    <style>
+        /* CSS cho Drop Cap */
+        p:first-letter {
+            font-size: 45px;
+            font-weight: bold;
+            float: left;
+            margin-right: 10px;
+            line-height: 1;
+        }
+
+        /* CSS cho Hover */
+        .hover-box {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .hover-box:hover {
+            transform: rotate(-5deg) scale(1.2);
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Văn bản sử dụng Drop Cap -->
+    <p>
+        This is an example paragraph demonstrating the use of the Drop Cap feature in CSS3. The first letter is styled uniquely to stand out, giving the text a classic and elegant appearance.
+    </p>
+
+    <!-- Các nút với hiệu ứng Hover -->
+    <div>
+        <div class="hover-box">Hover me!</div>
+        <div class="hover-box">Hover me!</div>
+        <div class="hover-box">Hover me!</div>
+    </div>
+</body>
+</html>
